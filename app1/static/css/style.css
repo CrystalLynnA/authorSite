@@ -1,0 +1,506 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Zen Antique Soft', serif; */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  font-family: 'Lato', sans-serif;
+	vertical-align: baseline;
+}
+body{
+  background-color: #fcfcf7;
+}
+img{
+  object-fit: contain;
+}
+#greeting{
+  font-family: 'Raleway', sans-serif;
+  font-size: 6vw;
+  color: #ff3836;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+}
+#scribble{
+  width: 60vw;
+  margin-bottom: -16vw;
+}
+.main_image{
+  width: 30vw;
+  margin-left: 10px;
+}
+#main_p{
+  max-width: 35vw;
+  font-size: 20px;
+  line-height: 1.8;
+  max-height: 22em;  
+  overflow: scroll;
+  letter-spacing: .1rem;
+  padding: 12px;
+}
+.middle_container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4vw 11vw;
+}
+.book_info_box{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4% 11%;
+}
+.cover_img{
+  width: 300px;
+  padding: 20px;
+}
+.book_info_box p{
+  width: 400px;
+  font-size: 20px;
+  padding: 20px;
+}
+.book_imgs{
+  width: 200px;
+  height: 280px;
+  margin: 10px;
+}
+.book_imgs:hover{
+  margin: 5px;
+  border: turquoise solid 3px;
+}
+.book_container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1vw 14vw;
+}
+.img_hy{
+  width: 40%;
+  object-fit: contain;
+}
+.main_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hy-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10vh;
+}
+.para{
+  max-width: 50vw;
+  font-size: 20px;
+  line-height: 1.8;
+  max-height: 30em;  
+  overflow: scroll;
+  letter-spacing: .1rem;
+  padding: 12px;
+  margin-left: 5vw;
+}
+.hy-para{
+  max-height: 36em;
+  width: 40vw;
+  padding: none;
+}
+.pict_container{
+  display: flex;
+  justify-items: center;
+}
+#logo{
+  width: 58px;
+  margin: -18px;
+  padding: 4px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+#myLinks{
+  display: flex;
+  justify-content: space-evenly;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fffef7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* border-radius: 5%; */
+  text-align: center;
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.topnav a:not(:first-child):hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+  margin-top: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.slideshow-box{
+  margin: 10px;
+  width: fit-content;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+  /* max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+} */
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Starting Photo */
+.startPic{
+  display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media screen and (min-width: 1920px){
+  .main_image{
+    width: 26vw;
+  }
+}
+@media screen and (max-width: 1024px){
+  .main_image{
+    width: 40vw;
+    margin: 2vw;
+  }
+  .middle_container{
+    margin: 2vw 3vw;
+  }
+  #main_p {
+    font-size: 20px;
+    margin: 1vw 2vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+  #logo{
+    display: none;
+  } 
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav a:not(:first-child):hover, .dropdown:hover .dropbtn {
+    background-color: transparent;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+  
+  .middle_container, .hy-container{
+    margin: 20px;
+    display: block;
+    padding: 1em;
+  }
+  #main_p, .para{
+    font-size: 16px;
+    max-width: 80vw;
+    text-align: center;
+  }
+  .hy-para{
+    max-height: 40em;
+    padding: none;
+  }
+  .main_image{
+    display: flex;
+    justify-self: center;
+    width: 70%;
+    border-radius: 2em;
+    margin: 5% 15%;
+  }
+  .img_hy{
+    width: 70%;
+  }
+  .book_container{
+    display: none;
+  }
+  .main_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

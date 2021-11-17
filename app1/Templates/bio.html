@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+        <script src="{% static 'js/script.js'%}"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+        <title>Bio</title>
+    </head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/" id="logo-href" class="active "><img id="logo" src="{% static 'img/logo.png' %}" alt="CW logo"></a>
+            <div id="myLinks">
+                <span></span>
+                <a href="/">Home</a>
+                <a href="/bio">Bio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Books</button>
+                    <div class="dropdown-content">
+                        <a href="/hardestYear">The Hardest Year</a>
+                        <a href="/anthologies">Anthologies</a>
+                    </div>
+                </div> 
+                <a href="/">Contact</a>
+                <span></span>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+              <i id="fafa" class="fa fa-bars"></i>
+            </a>
+        </nav> 
+    </header>
+    <div class="main_container">
+        <img id="scribble" src="{% static 'img/scribble.png' %}" alt="fancy scribble">
+        <h1 id="greeting">Biography</h1>
+        <div class="middle_container">
+        <img class="main_image" src="{% static 'img/youngcarole.jpg' %}" alt="Carole outside">
+        <p id="main_p" >Carole Wagener had the honor of coming into this world in 1948 on her brother’s fifth birthday. Always close to her family, she grew up in Alaska, Wisconsin, in a rural farming community. Her parents ran the Alaska General Store, where she learned to put her two-roomed school education to the test by correctly tabulating their customers’ bills. In 1966, Carole graduated from high school and then attended the University of Wisconsin-Green Bay Extension before transferring to UW-Madison to complete her physical therapy training in 1970.   
+
+            In 1966 at UWGB, Carole met her husband, Bill, during her freshman year. Bill then decided to enlist in the Army for training rather than become drafted into the infantry during the Vietnam War. They married on September 11, 1968, one day before he deployed to Vietnam. Carole and Bill write about their courtship and that first challenging year of marriage in their hybrid memoir, The Hardest Year: A Love Story in Letters from Vietnam. Bill returned from Vietnam in 1969 and completed his degree in environmental science. 
+            
+            In 1977, the couple moved to Los Angeles so that Bill could further his education while Carole worked at Kaiser Permanente, but at the birth of her second son in 1982, she decided it was time to move out of  Los Angeles. The family moved up to the beautiful Central Coast of California, and Carole had three more daughters (the youngest of whom are twins). In 2008, Carole had an early diagnosis of breast cancer, from which she successfully recovered. She continued to work part-time in physical therapy before retiring in 2018.  
+            
+            Looking for something to keep her busy in retirement, Carole joined Coastal Dunes, a California Writers Club branch, and became a charter member. There she found her tribe and became educated in the craft of writing.  She was always an avid reader, so writing came naturally, and she began writing poetry, fiction, and nonfictional short stories published in the club’s anthologies.  
+            
+            Although she never intended to write a book, Carole came up with that idea after Bill found a shoebox full of old letters from Vietnam in the garage, and she had just heard at a meeting how letters could be turned into a book. Carole went to work on organizing the letters, but needing more help, hired editors, went to writers’ conferences, and back to community college at the age of seventy. It would take her five years to complete the book.  
+            
+            When Carole is not writing, she enjoys traveling with always a book in hand and has been to twenty-two countries, most recently Australia in 2018. Now she limits her trips to the U.S., visiting her children and grandchildren in the Pacific Northwest and the Southwest.  
+            
+            In 2018, Carole and Bill celebrated their fifth wedding anniversary with a trip to Monterey Bay. They both enjoy day trips to the Pacific Ocean, dinner out, or watching a Green Bay Packer football game at home with grand kittens, Zombie and Zion.  
+            
+            Carole credits her strong faith in God to successfully getting through this life. In addition, she includes humor in her writings to convey a positive message to her readers. </p>
+        </div>
+    </div>
+
+</body>
+</html>

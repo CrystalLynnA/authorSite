@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <title>The Hardest Year</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/" id="logo-href" class="active "><img id="logo" src="{% static 'img/logo.png' %}" alt="CW logo"></a>
+            <div id="myLinks">
+                <span></span>
+                <a href="/">Home</a>
+                <a href="/bio">Bio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Books</button>
+                    <div class="dropdown-content">
+                        <a href="/hardestYear">The Hardest Year</a>
+                        <a href="/anthologies">Anthologies</a>
+                    </div>
+                </div> 
+                <a href="/">Contact</a>
+                <span></span>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+              <i id="fafa" class="fa fa-bars"></i>
+            </a>
+        </nav> 
+    </header>
+    <div class="main_container">
+        <img id="scribble" src="{% static 'img/scribble.png' %}" alt="fancy scribble">
+        <h1 id="greeting">The Hardest Year</h1>
+    </div>
+    <div class="hy-container">
+        <img class="main_image" src="{% static 'img/book1.jpg' %}" alt="The Hardest Year book cover">
+        <p class="para hy-para"> A Love Story in Letters from Vietnam: This hybrid memoir is written mainly from the point of view of a young military wife during the Vietnam Era. Over 68,000 words are based on three hundred letters between the wife and her soldier husband, including their poetry, stories, and photographs. It has been professionally edited.
+        
+        Synopsis: In 1968, a nineteen-year-old college student, Carole, hastily married her college sweetheart one day before shipping out to Vietnam. At the same time the war raged around her husband, Bill, a cultural war brewed across Carole’s college campus, UW-Madison. But, through regular correspondence, the couple soon discovered that sustaining love in the midst of separation was their ultimate battle.
+        
+        Laura Colbert Naylor, Iraq war veteran and author of Sirens: How to Pee Standing Up, had this to say about The Hardest Year, “Carole and Bill’s hardest year is one for the history books. Carole’s saved correspondence between her and her husband, Bill, exemplifies the raw emotions, new and fleeting love, and moral injury that soldiers endure. Bill’s heroic time at war and Carole’s tumultuous encounters on the UW-Madison campus during the riots and protests parallel each other as they maneuver through the infancy of their marriage. Through their letters, you get a sense of Bill’s comrades jeering him along and his values and ethos winning that war, but in the process, losing a sense of being and his love of life. This book is a true transportation into the Vietnam era both from a civilian and a military lens.”
+        
+        Biographies
+        
+        Carole Wagener, a charter member of Coastal Dunes (a branch of the California Writers Club), has written for seven years and has had short stories and poetry published in four anthologies. The Hardest Year is her first book. She is a retired physical therapist who frequently worked with veterans. She and Bill have been married fifty-three years and have five children. She can be reached by email at: clowagener@gamil.com
+        
+        William (Bill) Wagener, a disabled Vietnam War veteran, produces two talk-television shows, Take Back America and On Second Thought, on public access television in Santa Barbara County, California. He is known worldwide for his coverage of the 2005 Michael Jackson trial. He has self-published two-family genealogy books. Bill can be reached at williamwagener007@gmail.co
+        </p>
+    </div>
+        <!-- The four columns -->
+        <!-- <div class="row">
+          <div class="column">
+            <img id="myImg" src="{% static 'img/wedding.jpg' %}" alt="Bill and Carole Wedding photo" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="{% static 'img/wedding2.jpg' %}" alt="Bill and Carole together" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="{% static 'img/youngcarole.jpg' %}" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="{% static 'img/candb.jpg' %}" alt="Carole and bill vintage" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="{% static 'img/GiBoarding.jpg' %}" alt="GI's Boarding a plane" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="{% static 'img/pilot.jpg' %}" alt="Bill in pilot seat of helecopter"style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="{% static 'img/uniform.jpg' %}" alt="Bill in uniform" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="{% static 'img/capitaldem.jpg' %}" alt="Madison Capital Demenstration" style="width:100%" onclick="myFunction(this);">
+          </div>
+        </div>
+        
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div> -->
+        <img id="myImg" src="{% static 'img/uniform.jpg' %}" alt="Bill in Uniform" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/wedding.jpg' %}" alt="Wedding photo" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/wedding2.jpg' %}" alt="Bill removing the garter" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/youngcarole.jpg' %}" alt="Picture of young Carole" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/capitaldem.jpg' %}" alt="Capital demenstration" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/airplane.jpg' %}" alt="Army Plane" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/GiBoarding.jpg' %}" alt="Gi's Boarding Pan Am" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/bday.jpg' %}" alt="Carole's birthday" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/candb.jpg' %}" alt="Bill and Carole" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/map.jpg' %}" alt="Vietnam Map" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/pilot.jpg' %}" alt="Bill in Pilot seat" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <img id="myImg" src="{% static 'img/foxhole.jpg' %}" alt="Bill in uniform" style="width:100%;max-width:300px" onclick="myFunction(this);">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="main_container">
+            <img class="img_hy" src="{% static 'img/withBill.jpg' %}" alt="Carole and Bill 2021" onclick="myFunction(this);">
+        </div>
+            <script src="{% static 'js/script.js'%}"></script>
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{% static 'img/foxhole.jpg' %}" alt="Bill in uniform" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'img/map.jpg' %}" alt="Vintage Vietnam Map" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'img/pilot.jpg' %}" alt="Bill in pilot seat of helecopter" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>

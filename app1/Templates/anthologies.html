@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <script src="{% static 'js/script.js'%}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <title>Anthologies</title>
+</head>
+<header>
+    <nav class="topnav" id="myTopnav">
+        <a href="/" id="logo-href" class="active "><img id="logo" src="{% static 'img/logo.png' %}" alt="CW logo"></a>
+        <div id="myLinks">
+            <span></span>
+            <a href="/">Home</a>
+            <a href="/bio">Bio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Books</button>
+                <div class="dropdown-content">
+                    <a href="/hardestYear">The Hardest Year</a>
+                    <a href="/anthologies">Anthologies</a>
+                </div>
+            </div> 
+            <a href="/">Contact</a>
+            <span></span>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+            <i id="fafa" class="fa fa-bars"></i>
+        </a>
+    </nav> 
+</header>
+<body>
+    <h1>A collection of literary works showcasing the talented writers of the breathtaking Coastal Dunes region of California. Shifting Sands, Turning Tides, Across a Distant Shore, and A Drift of Golden Sand are a compilation of fiction, nonfiction, and poetry pieces covering a variety of genres written by members of the Coastal Dunes Branch of the California Writers Club.</h1>
+    <div class="book_info_box">
+        <img class="cover_img" src="{% static 'img/turningTides.png' %}" alt="">
+        <p>Turning Tides (nonfiction)
+
+            “Adventures Down Under”
+            
+            By overcoming her fears, Grandma Carole learns that taking risks can lead to an extraordinary nine-week adventure in Melbourne, Australia.</p>
+    </div>
+    <div class="book_info_box">
+        <img class="cover_img" src="{% static 'img/distantShore.png' %}" alt="">
+        <p>Across a Distant Shore (fiction)
+
+            “Rosie and the Rockfish”
+            
+            Widower Gilbert, a retired minister, discovers red-headed Rosie through an online dating service and meets her at the Monterey Bay Aquarium. Rosie sets Gil’s head spinning by saying, “Maybe I was a rockfish in a prior lifetime?”
+            
+            “Going Live: S.T.E.P.C.O. Infocommercial”
+            
+            Madeline’s first taping of an infocommercial for her amazing cleaning product, “Sure to Eliminate Pee Cat Odor,” turns humorously disastrous when she expresses her views on what’s happening in the world. “Oui, oui, there’s got to be a better way…”</p>
+    </div>
+    <div class="book_info_box">
+        <img class="cover_img" src="{% static 'img/goldenSand.png' %}" alt="">
+        <p>A DRIFT OF GOLDEN SAND 
+            <br>“Never Hide Again”
+            <br>After a five year recovery from breast cancer, Carole attends an “Enhancement Retreat” and discovers “picture journaling.” Weekly sessions at home lead to a release of fear and to her love of writing.
+
+            <br>“A Mother’s Love”
+            
+            <br>A disobedient son and a distraught mother collide on a stormy day. Can a grown son forgive his mother for that what occurred that “fateful day at the West Alaska Lake?”
+            
+            <br>A selection of Carole’s poems entitled, “Buzz,” “To My Sister, Jeannie,” and “Santa’s Brownie” are good for a few laughs.</p>
+    </div>
+    <div class="book_info_box">
+        <img id="shifting" class="cover_img" src="{% static 'img/goldenSand.png' %}" alt="">
+        <p>Shifting Sands 
+        <br>(fiction, nonfiction, and poetry)
+        <br>In 1967, Carole and her father attend “The Ice Bowl” in Green Bay, Wisconsin, and find that their mutual love of football thaws out their frozen relationship in “Running to Win.”
+        <br>In “My Grandmother’s/Grandfather’s Ten Commandments,” Carole remembers her grandparents teaching her how to live a simple life while growing up in the Midwest.
+        <br>A Japanese exchange student, Ayaka, and Carole bond in “A Once in a Life time Opportunity” as they go in search of Brad Pitt’s home in Nipomo, California.
+        <br>Carole’s poems, “A Sister’s Love” and “Ode to a Monarch,” will bring the reader back to the love of family and nature.</p>
+</div>
+
+</body>
+</html>

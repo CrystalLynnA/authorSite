@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <script src="{% static 'js/script.js'%}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <title>Carole Wagener</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="/" id="logo-href" class="active "><img id="logo" src="{% static 'img/logo.png' %}" alt="CW logo"></a>
+            <div id="myLinks">
+                <span></span>
+                <a href="/">Home</a>
+                <a href="/bio">Bio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Books</button>
+                    <div class="dropdown-content">
+                        <a href="/hardestYear">The Hardest Year</a>
+                        <a href="/anthologies">Anthologies</a>
+                    </div>
+                </div> 
+                <a href="/contact">Contact</a>
+                <span></span>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+            <i id="fafa" class="fa fa-bars"></i>
+            </a>
+        </nav> 
+    </header>
+    <div class="main_container"        >
+        <img id="scribble" src="{% static 'img/scribble.png' %}" alt="fancy scribble">
+        <h1 id="greeting">Meet Carole Wagener</h1>
+        <div class="middle_container">
+        <p id="main_p" >Carole Wagener earned a B.S. degree from the University of Wisconsin and ended her 
+            fifty-year career as a physical therapist in 2018 to become a writer. She is a founding member 
+            of Coastal Dunes California Writers Club which has published her short stories in their anthologies. 
+            She and William have been married fifty plus years, have five adult children, and now live on the 
+            Central Coast of California. When not writing, Carole enjoys spending time with their grandchildren and traveling.</p>
+        <img class="main_image" src="{% static 'img/carole1.jpg' %}" alt="Carole outside">
+        </div>
+        <div class="book_container">
+            <a href="/hardestYear"><img class="book_imgs" src="{% static 'img/book1.jpg' %}" alt="The Hardest Year book cover"></a> 
+            <a href="/anthologies"><img class="book_imgs" src="{% static 'img/turningTides.png' %}" alt=""></a> 
+            <a href="/anthologies"><img class="book_imgs" src="{% static 'img/distantShore.png' %}" alt=""></a> 
+            <a href="/anthologies"><img class="book_imgs" src="{% static 'img/goldenSand.png' %}" alt=""></a> 
+        </div>
+    </div>
+    <img src="{% static 'img/apoc.jpg' %}" alt="">
+
+    <div class="scary_story_container">
+        <img src="{% static 'img/ribbon.png' %}" alt="first place ribbon" width="100">
+        <div class="message_container">
+            <h1>I never liked scary stories, but I wrote this 500-word supernatural story based on a nightmare I had in 2020 and entered it into the Ghost Story Challenge at the Solvang Library. Although I only won a bookmark, the best prize was knowing that a famous screenwriter and producer, Gerald Di Pego, was one of the judges and that he liked my work.</h1>
+        </div>
+        <h1>First place for the most creative Adult Original category</h1>
+            <h2>The Apocalypse</h2>
+            
+            <p>Darkness covers the earth. Outliers roam dimly lit streets. Are these Zombies I see, or demons, or just people dressed in black?
+            
+            I can’t tell as I peek out the rear window of my locked ute. I throw a quilt over my head, thinking I’m safe, but somehow a ‘she-devil’ gets inside.
+            
+            Dang, she smells like skunk.
+            
+            I wrestle her using all my powers, including my words. Eventually, I win by getting my claws into her gritty skin, but not before she brands me with a mark on my left buttock.
+            
+            “Yeowch!” I scream.
+            
+            She growls, “You’re too old to bear young. You’ll become a food source.”
+            
+            I tighten my grip.
+            
+            “What’s your name?” I demand.
+            
+            “Moriah,” she whimpers.
+            
+            My daughter?
+            
+            I drag Moriah’s sorry-ass out of the vehicle, force her inside my hut, and scream at her.
+            
+            “Now, tell me your secrets, wench.”
+            
+            Moriah opens an ancient book of drawings with an alphabet of two-lettered symbols. These same characters mysteriously appeared on all of our huts on this last day of the tenth month.
+            
+            “What do these letters mean?” I ask.
+            
+            “We are the occupiers. We will occupy your houses.”
+            
+            “No, you won’t,” I shout.
+            
+            Moriah activates an orange disc and throws it at me. A miniature stun-gun narrowly whizzes past me.
+            
+            “What else you got?” I holler.
+            
+            She opens another book— a red laser beam shoots out of it.
+            
+            “Give me that,” I yell, pulling it out of her hands. I strong-arm her and shove her into my washroom.
+            
+            “Is that all your tricks?” I ask while running the steaming bathwater.
+            
+            “I’ve got a treat for you,” I say, sprinkling in white crystals. “To wash away all your iniquities.”
+            
+            I step outside the washroom door, waiting.
+            
+            “Hand me your coverings.”
+            
+            The door opens a crack. Moriah hands me her clothing in exchange for a robe.
+            
+            It was a tight fit, but I wiggle into her skinny jeans and sneak out the front door. I tear those damn letters off my hut and then blend into the night.
+            
+            Maybe, I’m opening myself up for more attacks, but damn, I’m already branded.
+            
+            Evil beings run up and down the streets, knocking over Jack-O-Lanterns, and setting fires. Huts, utes, and forests go up in a blaze of smoke. Neighbors are fighting, and others are looting. I hear drones, miniature versions of the Starship Enterprise, circling overhead as a reddish hue covers the twilight sky.
+            
+            What the hell’s happening?
+            
+            ***
+            
+            “Mom, wake up!”
+            
+            Moriah’s shaking me. I open my eyes and yawn.
+            
+            “Mom, you stopped breathing again.”
+            
+            Screw this sleep apnea.
+            
+            I get up, shut off the breathing machine’s alarm, and open the drapes to a smoky-gray sky. My black cat, Zombie, joins me as I turn on the morning news to coverage of wildfires, burnt-out cities, and people rioting in the streets. The screen goes blank, followed by a high-pitched beep.
+            
+            ‘We interrupt our regular programming to bring you this special announcement. The President has just declared martial law.’
+            
+            Damn.</p>
+    </div>
+
+    
+
+</body>
+</html>

@@ -275,8 +275,12 @@ img{
 #anthologies_p{
   display: flex;
   justify-self: center;
-  font-size: 24px;
-  margin: 10%;
+  font-size: 28px;
+  margin: 4%;
+  max-width: 800px;
+  font-family: monospace;
+  border:black 3px solid;
+  padding: 10px;
 }
 
 
@@ -299,7 +303,7 @@ img{
   }
 }
 @media screen and (max-width: 600px) {
-  .apoc_box{
+  .apoc_box, .book_info_box{
     display: block;
   }
   .topnav a, .dropdown .dropbtn, .apoc_box img {
@@ -323,7 +327,7 @@ img{
     display: block;
     padding: 1em;
   }
-  #main_p, .para{
+  #main_p, .para, #anthologies_p{
     font-size: 16px;
     max-width: 80vw;
     text-align: center;

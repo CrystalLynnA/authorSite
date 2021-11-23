@@ -14,19 +14,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<h2>Image Modal</h2>
-<p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
-<p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
-
-<img id="myImg" src="{% static 'img/capitaldem.jpg' %}" alt="Snow" style="width:100%;max-width:300px">
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
+  <nav class="topnav" id="myTopnav">
+    <a href="/" id="logo-href" class="active "><img id="logo" src="{% static 'img/logo.png' %}" alt="CW logo"></a>
+    <div id="myLinks">
+        <span></span>
+        <a href="/">Home</a>
+        <a href="/bio">Bio</a>
+        <div class="dropdown">
+            <button class="dropbtn">Books</button>
+            <div class="dropdown-content">
+                <a href="/hardestYear">The Hardest Year</a>
+                <a href="/anthologies">Anthologies</a>
+            </div>
+        </div> 
+        <a href="/contact">Contact</a>
+        <span></span>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+        <i id="fafa" class="fa fa-bars"></i>
+    </a>
+</nav> 
+<div>
+  <p>Carole Wagener can be reached at: clowagener@gmail.com or find me on <a href=""><img src="" alt="facebook"></a></p>
 </div>
-<script src="{% static 'js/script.js'%}"></script>
 </body>
 </html>

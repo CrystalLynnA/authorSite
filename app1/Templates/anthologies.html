@@ -27,7 +27,7 @@
                     <a href="/anthologies">Anthologies</a>
                 </div>
             </div> 
-            <a href="/">Contact</a>
+            <a href="/contact">Contact</a>
             <span></span>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
@@ -36,30 +36,19 @@
     </nav> 
 </header>
 <body>
-    <p id="anthologies_p"> Shifting Sands, Turning Tides, Across a Distant Shore, and A Drift of Golden Sand are a compilation of fiction, nonfiction, and poetry pieces covering a variety of genres written by members of the Coastal Dunes Branch of the California Writers Club.</p>
+    <div class="main_container">
+    <p id="anthologies_p">Shifting Sands, Turning Tides, Across a Distant Shore, and A Drift of Golden Sand. Each is a compilation of fiction, nonfiction, and poetry pieces covering a variety of genres. Written by members of the a Coastal Dunes Branch of the California Writers Club. A description of Carole Wageners contributions are below.</p>
     <div class="book_info_box">
-        <img class="cover_img" src="{% static 'img/turningTides.png' %}" alt="">
-        <p>Turning Tides (nonfiction)
-
-            “Adventures Down Under”
-            
-            By overcoming her fears, Grandma Carole learns that taking risks can lead to an extraordinary nine-week adventure in Melbourne, Australia.</p>
-    </div>
-    <div class="book_info_box">
-        <img class="cover_img" src="{% static 'img/distantShore.png' %}" alt="">
-        <p>Across a Distant Shore (fiction)
-
-            “Rosie and the Rockfish”
-            
-            Widower Gilbert, a retired minister, discovers red-headed Rosie through an online dating service and meets her at the Monterey Bay Aquarium. Rosie sets Gil’s head spinning by saying, “Maybe I was a rockfish in a prior lifetime?”
-            
-            “Going Live: S.T.E.P.C.O. Infocommercial”
-            
-            Madeline’s first taping of an infocommercial for her amazing cleaning product, “Sure to Eliminate Pee Cat Odor,” turns humorously disastrous when she expresses her views on what’s happening in the world. “Oui, oui, there’s got to be a better way…”</p>
+        <img id="shifting" class="cover_img" src="{% static 'img/shifting.png' %}" alt="">
+        <p><a href="https://www.amazon.com/dp/1975611985/ref=cm_sw_em_r_mt_dp_0BB3Z3AZGJ46ZNDS52W2">SHIFTING SANDS </a>
+        <br>In 1967, Carole and her father attend “The Ice Bowl” in Green Bay, Wisconsin, and find that their mutual love of football thaws out their frozen relationship in “Running to Win.”
+        <br>In “My Grandmother’s/Grandfather’s Ten Commandments,” Carole remembers her grandparents teaching her how to live a simple life while growing up in the Midwest.
+        <br>A Japanese exchange student, Ayaka, and Carole bond in “A Once in a Life time Opportunity” as they go in search of Brad Pitt’s home in Nipomo, California.
+        <br>Carole’s poems, “A Sister’s Love” and “Ode to a Monarch,” will bring the reader back to the love of family and nature.</p>
     </div>
     <div class="book_info_box">
         <img class="cover_img" src="{% static 'img/goldenSand.png' %}" alt="">
-        <p>A DRIFT OF GOLDEN SAND 
+        <p><a href="https://www.amazon.com/dp/1729662366/ref=cm_sw_em_r_mt_dp_3S9R51BZ0KFJZYHS5F4V">A DRIFT OF GOLDEN SAND</a>  
             <br>“Never Hide Again”
             <br>After a five year recovery from breast cancer, Carole attends an “Enhancement Retreat” and discovers “picture journaling.” Weekly sessions at home lead to a release of fear and to her love of writing.
 
@@ -70,14 +59,27 @@
             <br>A selection of Carole’s poems entitled, “Buzz,” “To My Sister, Jeannie,” and “Santa’s Brownie” are good for a few laughs.</p>
     </div>
     <div class="book_info_box">
-        <img id="shifting" class="cover_img" src="{% static 'img/shifting.png' %}" alt="">
-        <p><a href="https://www.amazon.com/dp/1975611985/ref=cm_sw_em_r_mt_dp_0BB3Z3AZGJ46ZNDS52W2">Shifting Sands </a>
-        <br>(fiction, nonfiction, and poetry)
-        <br>In 1967, Carole and her father attend “The Ice Bowl” in Green Bay, Wisconsin, and find that their mutual love of football thaws out their frozen relationship in “Running to Win.”
-        <br>In “My Grandmother’s/Grandfather’s Ten Commandments,” Carole remembers her grandparents teaching her how to live a simple life while growing up in the Midwest.
-        <br>A Japanese exchange student, Ayaka, and Carole bond in “A Once in a Life time Opportunity” as they go in search of Brad Pitt’s home in Nipomo, California.
-        <br>Carole’s poems, “A Sister’s Love” and “Ode to a Monarch,” will bring the reader back to the love of family and nature.</p>
-</div>
+        <img class="cover_img" src="{% static 'img/distantShore.png' %}" alt="">
+        <p><a href="https://www.amazon.com/dp/1076278469/ref=cm_sw_em_r_mt_dp_FJWG0JVAC18NCXF79W2H">ACROSS A DISTANT SHORE</a>
 
+            <br>“Rosie and the Rockfish”
+            
+            Widower Gilbert, a retired minister, discovers red-headed Rosie through an online dating service and meets her at the Monterey Bay Aquarium. Rosie sets Gil’s head spinning by saying, “Maybe I was a rockfish in a prior lifetime?”
+            
+            <br>“Going Live: S.T.E.P.C.O. Infocommercial”
+            
+            Madeline’s first taping of an infocommercial for her amazing cleaning product, “Sure to Eliminate Pee Cat Odor,” turns humorously disastrous when she expresses her views on what’s happening in the world. “Oui, oui, there’s got to be a better way…”</p>
+    </div>
+    <div class="book_info_box">
+        <img class="cover_img" src="{% static 'img/turningTides.png' %}" alt="">
+        <p><a href="https://www.amazon.com/dp/B0892BBC3V/ref=cm_sw_em_r_mt_dp_Z0541Y7TFFG5Z20SA1T7">TURNING TIDES</a>
+        <br> What’s the connection between a seventy-year old grandmother and the story, 
+        Alice’s Adventures in Wonderland? Find out as you accompany Grandma Carole to 
+        Australia in Adventures Down Under for a nine week stay in Melbourne to visit her family. 
+        By overcoming her fears, she learns that taking risks, even if it means falling down an 
+        unknown rabbit hole, can lead to an extraordinary adventure. After returning home, she 
+        happily realizes that her life has changed for the better.</p>
+    </div>
+</div>
 </body>
 </html>

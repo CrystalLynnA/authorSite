@@ -25,6 +25,10 @@ time, mark, audio, video {
 body{
   background-color: #fcfcf7;
 }
+h1{
+  font-size: 24px;
+  margin: 10px;
+}
 img{
   object-fit: contain;
 }
@@ -80,27 +84,38 @@ img{
 }
 .message_from_author_box{
   display: flex;
+  width: 506px;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   align-items: flex-start;
 }
-#author_p{
-  width: 400px;
+.author_p{
+  width: auto;
+  max-width: 400px;
   color: #7e2340;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: initial;
+  font-style: italic;
   letter-spacing: 2px;
+  line-height: 30px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   margin-bottom: 30px;
 }
+.laura_p{
+  max-width: 500px;
+}
+.author_name{
+  margin-top: -20px;
+  margin-left: 60px;
+}
 .quotes_imgL, .quotes_imgR{
   width: 18px;
 }
 .quotes_imgR{
-  margin-right: 19px;
+  margin-right: 42px;
   margin-bottom: 8px;
 }
 .quotes_imgL{
@@ -144,7 +159,6 @@ img{
 }
 .book_imgs:hover{
   margin: 5px;
-  border: turquoise solid 3px;
 }
 .book_container{
   display: flex;
@@ -257,7 +271,8 @@ img{
 .topnav a:not(:first-child):hover, .dropdown:hover .dropbtn {
   background-color: #555;
   color: white;
-  margin-top: 5px;
+  /* margin-top: 5px; */
+  padding: 10px 16px;
 }
 
 .dropdown-content a:hover {
@@ -303,6 +318,9 @@ img{
   }
 }
 @media screen and (max-width: 600px) {
+  .message_from_author_box{
+  width: auto;
+  }
   .apoc_box, .book_info_box{
     display: block;
   }
@@ -348,7 +366,7 @@ img{
     width: 70%;
   }
   .book_container{
-    display: none;
+    display: block;
   }
   .main_container{
     display: flex;

@@ -33,9 +33,23 @@
     <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
         <i id="fafa" class="fa fa-bars"></i>
     </a>
-</nav> 
-<div>
-  <h1>Carole Wagener can be reached at: clowagener@gmail.com or find me on <a href=""><img src="" alt="facebook"></a></h1>
-</div>
+    </nav> 
+    <div class="main_container">
+        <img id="scribble" src="{% static 'img/scribble.png' %}" alt="fancy scribble">
+        <h1 id="greeting">Let's Connect</h1><div class="middle_container">
+        <div class="contact_container">
+            <a href="mailto:clowagener@gmail.com"><img src="{% static 'img/email.png' %}" alt="" width="100">
+            </a>
+            <h1>Reach out any time by emailing: clowagener@gmail.com </h1>
+        </div>
+        <div class="contact_container">
+            <a href="https://www.facebook.com/carole.wagener.1"> <img src="{% static 'img/FBlogo.png' %}" alt="facebook"></a>
+            <h1>Connect with me on Facebook</h1>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <footer>
+        <div><p>copyright &copy; {{year}} carolewagener.com</p></div>
+    </footer>
 </body>
 </html>

@@ -1,18 +1,30 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render, HttpResponse
+import datetime
 from . models import *
 
 def index(request):
-    return render(request, 'index.html')
+    context = {
+        "year" : datetime.datetime.today().year}
+    return render(request, 'index.html', context)
    
 def bio(request):
-    return render(request, 'bio.html')
+    context = {
+        "year" : datetime.datetime.today().year}
+    return render(request, 'bio.html', context)
 
 def hardestYear(request):
-    return render(request,'hardestYear.html')
+    context = {
+        "year" : datetime.datetime.today().year}
+    return render(request,'hardestYear.html', context)
 
 def anthologies(request):
-    return render(request,'anthologies.html')
+    context = {
+        "year" : datetime.datetime.today().year}
+    return render(request,'anthologies.html', context)
 
 def contact(request):
-    return render(request, 'contact.html')
+    context = {
+        "year" : datetime.datetime.today().year}
+    return render(request, 'contact.html', context)
+    

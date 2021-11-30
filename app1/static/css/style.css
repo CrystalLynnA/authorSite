@@ -24,6 +24,7 @@ time, mark, audio, video {
 }
 body{
   background-color: #fcfcf7;
+  min-height: 800px;
 }
 h1{
   font-size: 24px;
@@ -61,7 +62,7 @@ img{
   max-width: 50vw;
   max-height: 60vh;
 }
-.middle_container{
+.middle_container, footer{
   display: flex;
   justify-content: space-evenly;
   margin: 4vw 11vw;
@@ -92,7 +93,7 @@ img{
 }
 .author_p{
   width: auto;
-  max-width: 400px;
+  max-width: 402px;
   color: #7e2340;
   font-size: 20px;
   font-family: initial;
@@ -109,18 +110,23 @@ img{
 }
 .author_name{
   margin-top: -20px;
-  margin-left: 60px;
+  margin-left: 95px;
 }
-.quotes_imgL, .quotes_imgR{
+.quotes_imgL, .quotes_imgR, .quotes_imgRight{
   width: 18px;
 }
 .quotes_imgR{
   margin-right: 42px;
   margin-bottom: 8px;
+  height: 30px;
 }
 .quotes_imgL{
   margin-top:-8px;
   margin-right: 4px;
+}
+.quotes_imgRight{
+  margin: -22px 16px 0px -32px;
+  height: 42px;
 }
 .apoc_box{
   display: flex;
@@ -137,11 +143,16 @@ img{
 #apoc-p{
   width: 80%;
   line-height: 28px;
+  font-family: 'Zen Antique Soft', serif;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .book_info_box{
   display: flex;
   justify-content: space-evenly;
   margin: 4% 11%;
+  align-items: center;
 }
 .cover_img{
   width: 300px;
@@ -151,6 +162,7 @@ img{
   width: 400px;
   font-size: 20px;
   padding: 20px;
+  font-family: serif;
 }
 .book_imgs{
   width: 200px;
@@ -166,13 +178,24 @@ img{
   margin: 1vw 14vw;
 }
 .img_hy{
-  width: 40%;
+  width: 50vw;
+  padding: 10px;
   object-fit: contain;
 }
-.main_container{
+.main_container, .contact_container{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.contact_container{
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 2em 1em 4em / 0.5em 3em;
+  max-width: 400px;
+  margin: 10px;
+}
+.spacer{
+  height: 25vh;
 }
 .hy-container{
   display: flex;
@@ -194,12 +217,13 @@ img{
 .hy-para{
   max-height: 36em;
   width: 40vw;
+  min-width: 300px;
   padding: none;
 }
 .pict_container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 5%;
 }
 #logo{
@@ -290,14 +314,10 @@ img{
 #anthologies_p{
   display: flex;
   justify-self: center;
-  font-size: 28px;
-  margin: 4%;
-  max-width: 800px;
-  font-family: monospace;
-  border:black 3px solid;
+  font-size: 20px;
+  max-width: 600px;
   padding: 10px;
 }
-
 
 @media screen and (min-width: 1920px){
   .main_image{
@@ -324,7 +344,7 @@ img{
   .apoc_box, .book_info_box{
     display: block;
   }
-  .topnav a, .dropdown .dropbtn, .apoc_box img {
+  .topnav a, .dropdown .dropbtn, .apoc_box img, .spacer {
     display: none;
   }
   #logo{
@@ -340,10 +360,13 @@ img{
     margin-top: 0px;
   }
   
-  .middle_container, .hy-container{
+  .middle_container, .hy-container, .book_container{
     margin: 20px;
     display: block;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #main_p, .para, #anthologies_p{
     font-size: 16px;

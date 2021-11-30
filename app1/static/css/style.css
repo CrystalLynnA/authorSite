@@ -191,7 +191,7 @@ img{
   border: 2px solid black;
   padding: 10px;
   border-radius: 2em 1em 4em / 0.5em 3em;
-  max-width: 400px;
+  width: 400px;
   margin: 10px;
 }
 .spacer{
@@ -335,6 +335,9 @@ img{
   #main_p {
     font-size: 20px;
     margin: 1vw 2vw;
+  }
+  .contact_container{
+    width: 290px;
   }
 }
 @media screen and (max-width: 600px) {

@@ -424,6 +424,9 @@ img{
     width: 100%;
     text-align: left;
   }
+  .book_info_box p{
+    width: 300px;
+  }
 }
 * {
   box-sizing: border-box;
